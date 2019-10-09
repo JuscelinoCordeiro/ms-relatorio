@@ -24,10 +24,9 @@ $mpdf->Output($filepath,'F');
 // return $mpdf->Output(\Mpdf\Output\Destination::DOWNLOAD);
 
 if(file_exists($filepath)){
-    echo $filename;
-    // print_r(json_encode(array('status' => '1', 'dados' => 'deu certo')));
+    // echo $filename;
+    // echo (json_encode(array('status' => '1', 'dados' => utf8_encode($filename))));
+    echo json_encode(array('status' => '1', 'dados' => $filename));
 }else{
-    print_r(json_encode(array('status' => '0', 'dados' => 'deu ruim')));
+    echo (json_encode(array('status' => '0', 'dados' => 'erro')));
 }
-
-//return $$mpdf->Output();;

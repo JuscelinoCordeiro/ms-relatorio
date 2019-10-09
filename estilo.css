@@ -1,0 +1,35 @@
+ body {
+    /*background-color:#0070a3;*/
+ }
+ 
+ .acao {
+     visibility: hidden;
+ }
+ 
+ table, th, td {
+     font-size: 14px;
+     /*border: 1px solid black;*/
+     border: 0;
+     border-collapse: collapse;
+     padding: 5px;
+ }
+ 
+ table tr:nth-child(odd) {
+   background-color: #eee;
+ }
+ 
+ table tr:nth-child(even) {
+   background-color: #fff;
+ }
+ 
+ table thead th {
+   background-color: #ccc;
+ }
+ 
+ table tfoot td {
+   background-color: #ccc;
+ }     
+ 
+ .noprint {
+     display: none !important; 
+ }

@@ -23,6 +23,7 @@ if ($conteudo == "") {
     $mpdf->WriteHTML($conteudo);
     $mpdf->Output($filepath, 'F');
 
+    //retorno da execução
     if (file_exists($filepath)) {
         echo json_encode(array('status' => '1', 'dados' => $filename));
     } else {
